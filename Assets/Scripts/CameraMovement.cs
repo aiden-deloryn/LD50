@@ -10,7 +10,7 @@ public class CameraMovement : MonoBehaviour {
 	public bool rotateX, rotateY, rotateZ;
 	public float rotateSpeed;
 
-	void LateUpdate() {
+	void FixedUpdate() {
 		if (anchor != null) {
 			Move();
 			Rotate();

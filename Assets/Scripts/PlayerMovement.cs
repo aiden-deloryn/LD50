@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 inputForce = new Vector2(x, y);
         inputForce = inputForce.normalized;
-        rb.AddForce(inputForce * Time.deltaTime * movementSpeed);
+        rb.AddForce(inputForce * movementSpeed);
         Vector2 movement = rb.velocity;
 
         Vector2 velocity = rb.velocity;
