@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
         float y = Input.GetAxisRaw("Vertical");
 
         Vector2 inputForce = new Vector2(x, y);
-
+        inputForce = inputForce.normalized;
         rb.AddForce(inputForce * Time.deltaTime * movementSpeed);
         Vector2 movement = rb.velocity;
 
