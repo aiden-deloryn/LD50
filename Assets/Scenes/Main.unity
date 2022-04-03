@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &134306206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8961026369804146683, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
+  m_PrefabInstance: {fileID: 1463803614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &149038730
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdecaa9b34974b7cbf6a1d02e759e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anchor: {fileID: 0}
+  anchor: {fileID: 134306206}
   followX: 1
   followY: 1
   followZ: 0
@@ -330,22 +335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2034181240, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
-      propertyPath: followX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034181240, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
-      propertyPath: followY
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034181240, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
-      propertyPath: followZ
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034181240, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
-      propertyPath: moveSpeed
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 4487628907142944203, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
       propertyPath: m_Name
       value: Player_old2
