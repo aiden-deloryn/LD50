@@ -126,8 +126,11 @@ GameObject:
   - component: {fileID: 8961026369804146682}
   - component: {fileID: 8961026369804146681}
   - component: {fileID: 617631712}
+  - component: {fileID: 5066077}
+  - component: {fileID: 5066075}
+  - component: {fileID: 5066076}
   m_Layer: 0
-  m_Name: Player_old2
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,6 +254,50 @@ MonoBehaviour:
   bullet: {fileID: 5651685422468687097, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
   bulletTransform: {fileID: 5462816036610602927, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
   firingPeriod: 0.5
+--- !u!58 &5066077
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487628907142944203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &5066075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487628907142944203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7acbd958c19914de3b043b9212a34360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  includeChildObjects: 1
+  flickerInterval: 0.2
+--- !u!114 &5066076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487628907142944203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad0b72f4f53e461f8421c04dd26bdd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHitPoints: 5
+  invulnerabilityTime: 2
 --- !u!114 &4487628905975434977
 MonoBehaviour:
   m_ObjectHideFlags: 0
