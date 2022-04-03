@@ -99,6 +99,7 @@ MonoBehaviour:
   force: 15
   bulletOut: {fileID: 0}
   playerAt: {fileID: 0}
+  range: 12
 --- !u!50 &6962838571317007410
 Rigidbody2D:
   serializedVersion: 4
