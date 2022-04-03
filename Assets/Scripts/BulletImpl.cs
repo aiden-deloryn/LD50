@@ -15,7 +15,7 @@ public class BulletImpl : MonoBehaviour
     void Start()
     {
         bulletOut = GameObject.Find("BulletOut").transform;
-        playerAt = GameObject.Find("Player").transform;
+        playerAt = GameObject.FindGameObjectWithTag("Player").transform;
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         mousePositionNow = mainCam.ScreenToWorldPoint(Input.mousePosition);
