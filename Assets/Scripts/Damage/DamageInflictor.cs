@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageInflictor : MonoBehaviour {
     [SerializeField] protected int damage;
     [SerializeField] protected bool destroyOnDamage = true;
+    public GameObject particleHit;
 
     // Update is called once per frame
     protected void Update() {
@@ -16,7 +17,7 @@ public class DamageInflictor : MonoBehaviour {
 
         if (hitPoints != null && hitPoints.IsVulnerable()) {
             hitPoints.InflictDamage(damage);
-
+            Instantiate(particleHit, transform.position, Quaternion.AngleAxis(90, transform.position));
             if (destroyOnDamage) {
                 Destroy(this.gameObject);
             }

@@ -19,7 +19,6 @@ public class EnemySpawner : MonoBehaviour
     }
     void Update(){
         timePassed += Time.deltaTime;
-        print(Time.time);
         //Debug.Log(timePassed);
     }
     IEnumerator BeginSpawning(){

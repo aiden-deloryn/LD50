@@ -10,6 +10,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
 
     private int currentHitPoints;
     private bool vulnerable = true;
+    public GameObject particleDeath;
 
     // Start is called before the first frame update
     protected void Start() {
@@ -45,6 +46,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
     public void Die() {
         //AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
         //Instantiate(explosionPrefab, transform.position, transform.rotation);
+        Instantiate(particleDeath, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

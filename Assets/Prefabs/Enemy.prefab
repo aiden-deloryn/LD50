@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDetectionRadius: 5
   moveSpeed: 4
-  maxPosX: 30
-  maxPosY: 15
+  maxPosX: 40
+  maxPosY: 20
 --- !u!114 &1324076909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   destroyOnDamage: 1
+  particleHit: {fileID: 4571210780685249199, guid: 5f72b6563379fca42a1683af42d5ae54, type: 3}
 --- !u!61 &5029440042158146862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,3 +156,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHitPoints: 50
+  particleDeath: {fileID: 6792973657245073801, guid: 8e4a15946c9022940a72b3b2f44d03f4, type: 3}
