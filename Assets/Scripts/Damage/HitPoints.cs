@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HitPoints : MonoBehaviour, IDamageable {
     [SerializeField] int baseHitPoints;
-    //[SerializeField] AudioClip deathSound;
-    //[SerializeField] float deathSoundVolume;
-    //[SerializeField] GameObject explosionPrefab;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] float deathSoundVolume;
+    [SerializeField] GameObject explosionPrefab;
 
     private int currentHitPoints;
     private bool vulnerable = true;
@@ -23,7 +23,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
 
     public virtual void InflictDamage(int damage) {
         currentHitPoints = Mathf.Clamp(currentHitPoints - damage, 0, baseHitPoints);
-
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
         print("Damage inflicted! Current HP/Lives: " + currentHitPoints);
 
         if (currentHitPoints <= 0) {
@@ -44,7 +44,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
     }
 
     public void Die() {
-        //AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
         //Instantiate(explosionPrefab, transform.position, transform.rotation);
         Instantiate(particleDeath, transform.position, Quaternion.identity);
         Destroy(gameObject);

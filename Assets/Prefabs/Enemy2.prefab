@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b94b19de928cf944b35dcf3c09a7462, type: 3}
   m_Color: {r: 0.59369886, g: 0.61150897, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,6 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   destroyOnDamage: 1
+  deathSound: {fileID: 8300000, guid: 913d543045d814c40b071f74eb21107c, type: 3}
+  deathSoundVolume: 0.1
   particleHit: {fileID: 4571210780685249199, guid: 5f72b6563379fca42a1683af42d5ae54, type: 3}
 --- !u!114 &7876142575455750384
 MonoBehaviour:
@@ -130,6 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHitPoints: 100
+  deathSound: {fileID: 8300000, guid: 6cb1d3759e19fd543aaf39a6b15267df, type: 3}
+  deathSoundVolume: 0.1
+  explosionPrefab: {fileID: 0}
   particleDeath: {fileID: 6792973657245073801, guid: 8e4a15946c9022940a72b3b2f44d03f4, type: 3}
 --- !u!61 &-7758549070752735553
 BoxCollider2D:
@@ -148,7 +153,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.36, y: 1.13}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
