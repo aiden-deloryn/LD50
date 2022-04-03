@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 8961026369804146682}
   - component: {fileID: 8961026369804146681}
   - component: {fileID: 617631712}
+  - component: {fileID: 2034181240}
   m_Layer: 0
   m_Name: Player_old2
   m_TagString: Player
@@ -233,7 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rb: {fileID: 0}
   maxVelocity: 5
 --- !u!114 &617631712
 MonoBehaviour:
@@ -252,6 +252,27 @@ MonoBehaviour:
   bullet: {fileID: 5651685422468687097, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
   bulletTransform: {fileID: 5462816036610602927, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
   firingPeriod: 0.5
+--- !u!114 &2034181240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487628907142944203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdecaa9b34974b7cbf6a1d02e759e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {fileID: 8961026369804146683}
+  followX: 0
+  followY: 0
+  followZ: 0
+  moveSpeed: 0
+  rotateX: 0
+  rotateY: 0
+  rotateZ: 0
+  rotateSpeed: 0
 --- !u!114 &4487628905975434977
 MonoBehaviour:
   m_ObjectHideFlags: 0
