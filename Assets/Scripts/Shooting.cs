@@ -12,7 +12,7 @@ public class Shooting : MonoBehaviour
     private float coolDownTimer;// controls the fire frequency.
     public GameObject bullet;
     public Transform bulletTransform;
-    public float firingPeriod;// in sec 
+    public float firingPeriod;// in sec, next feature: decrease 0.1 when same weapon picked up until 0.1 sec
     
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,11 @@ public class Shooting : MonoBehaviour
 
         // rotate this object to point to the mouse cursor
         transform.rotation = Quaternion.Euler(0, 0, rotationDegZ);
+
+        // Update bullet if weapon changes
+        // decrease fire period by 0.1 sec if collected weapon of the same type
+        // change weapon color if collected difference type and increase fire period by 0.1sec
+        // 
 
         // fire when mouse left button clicked or held done
         if (!canFire)// when canFire is false, which means when cannot fire

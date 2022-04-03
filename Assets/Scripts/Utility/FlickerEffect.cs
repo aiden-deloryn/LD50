@@ -61,8 +61,8 @@ public class FlickerEffect : MonoBehaviour {
     }
 
     private void ToggleAlpha(SpriteRenderer targetRenderer) {
-        float currentAlpha = spriteRenderer.color.a;
+        float currentAlpha = targetRenderer.color.a;
         float newAlpha = Mathf.Approximately(currentAlpha, alphaValueLow) ? alphaValueHigh : alphaValueLow;
-        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, newAlpha);
+        targetRenderer.color = new Color(targetRenderer.color.r, targetRenderer.color.g, targetRenderer.color.b, newAlpha);
     }
 }
