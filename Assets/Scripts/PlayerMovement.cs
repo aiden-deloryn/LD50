@@ -5,8 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     public float maxVelocity;
+    private void Start()
+    {
+        this.rb = gameObject.GetComponent<Rigidbody2D>();
+    }
     void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");
