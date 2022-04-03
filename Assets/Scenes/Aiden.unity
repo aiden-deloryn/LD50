@@ -784,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958431584976485175, guid: 7efff2dad90b0f8469763b97102cea41, type: 3}
       propertyPath: mutationTime
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3958431584976485577, guid: 7efff2dad90b0f8469763b97102cea41, type: 3}
       propertyPath: m_Name
