@@ -112,7 +112,24 @@ Transform:
   m_Father: {fileID: 8961026369804146683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8961026369804146662
+--- !u!114 &4487628905975434977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487628905975434991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42575d3eb3f53ab42bbc9787e68c05d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4487628907142944205}
+  canFire: 1
+  bullet: {fileID: 5651685422468687097, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
+  bulletTransform: {fileID: 5462816036610602927, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
+  firingPeriod: 0.1
+--- !u!1 &4487628907142944203
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rb: {fileID: 8961026369804146682}
+  rb: {fileID: -4724479176954615018}
   maxVelocity: 5
 --- !u!114 &617631712
 MonoBehaviour:

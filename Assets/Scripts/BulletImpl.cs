@@ -10,6 +10,7 @@ public class BulletImpl : MonoBehaviour
     public float force;// gives the bullet some velocity
     public Transform bulletOut;
     public Transform playerAt;
+    public float range;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +28,15 @@ public class BulletImpl : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0 , rot);//why + 90?
         transform.position = transform.position + bulletOut.position;
-        Debug.Log("bullet rotation: " + transform.rotation);
-        Debug.Log("bullet out point: " + transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // if bullet goes out of a circle, it disappears
+        if (Vector3.Distance(transform.position, playerAt.position) > range)
+        {
+            Destroy(gameObject);
+        }
     }
 }
