@@ -130,7 +130,7 @@ MonoBehaviour:
   canFire: 1
   bullet: {fileID: 5651685422468687097, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
   bulletTransform: {fileID: 5462816036610602927, guid: 3d3f3c9d4abbbbe41929b8352cd4d75d, type: 3}
-  firingPeriod: 0.2
+  firingPeriod: 0.1
 --- !u!1 &4487628907142944203
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,11 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a3868fb804bce4487c5544ce51df11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   movementSpeed: 10
-  rb: {fileID: 8961026369804146682}
-=======
-  movementSpeed: 500
   rb: {fileID: -4724479176954615018}
->>>>>>> 3e1bdb65ef0b4150d6d861ee7a3966a31dc7dd37
   maxVelocity: 5
