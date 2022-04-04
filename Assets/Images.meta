@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprite/Player/Idle.anim.meta
+guid: d50164e12de0fe74888f211d52335378
+NativeFormatImporter:
+========
 guid: edebc823f794e42f2bc6deb2f5b5877a
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> 3c51525457a29376298d7883844f05a726abd30e:Assets/Images.meta
   externalObjects: {}
+  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

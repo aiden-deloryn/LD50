@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6962838571317007410}
   - component: {fileID: 7964296213036002650}
   - component: {fileID: 6679827887601852461}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Bullet_plain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   destroyOnDamage: 1
+  deathSound: {fileID: 0}
+  deathSoundVolume: 0
   particleHit: {fileID: 4571210780685249199, guid: 5f72b6563379fca42a1683af42d5ae54, type: 3}
 --- !u!58 &6679827887601852461
 CircleCollider2D:
