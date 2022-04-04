@@ -19,7 +19,11 @@ public class BasicEnemy : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
-        Move();
+        print("Should Move Enemy: " + player.activeSelf);
+        if (player.activeSelf)
+        {
+            Move();
+        }
     }
 
     void Move() {

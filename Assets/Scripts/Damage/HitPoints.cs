@@ -51,6 +51,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
         if(gameObject.tag == "Player")
         {
             gameObject.SetActive(false);
+            print("Player is inactive now.");
             gameOverScreen.Setup();
 
         }
