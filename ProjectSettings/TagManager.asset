@@ -44,9 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-=======
   - name: New Layer
     uniqueID: 758292857
     locked: 0
->>>>>>> powerup
