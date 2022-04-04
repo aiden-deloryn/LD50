@@ -199,16 +199,20 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8961026369804146680, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961026369804146680, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
       propertyPath: m_Color.b
-      value: 0.38679248
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8961026369804146680, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
       propertyPath: m_Color.g
-      value: 0.24630654
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8961026369804146680, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
       propertyPath: m_Color.r
-      value: 0.34453827
+      value: 0.5273633
       objectReference: {fileID: 0}
     - target: {fileID: 8961026369804146680, guid: f6c3582fdea5e3b41aaf311d2908dabd, type: 3}
       propertyPath: m_SortingLayer
