@@ -48,10 +48,10 @@ MonoBehaviour:
   - {fileID: 7029291881108124978, guid: 20c01f525f933a749a3cb313a9909b0a, type: 3}
   - {fileID: 3698836173319808874, guid: 55750214d3cb04841990cbda379e7fdd, type: 3}
   plrPos: {fileID: 0}
-  spawnDelay: 5
+  spawnDelay: 3
   minSpawnRange: 10
   xMin: -50
   xMax: 50
   yMin: -25
   yMax: 25
-  mutationTime: 20
+  mutationTime: 30

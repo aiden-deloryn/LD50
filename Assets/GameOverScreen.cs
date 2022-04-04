@@ -12,6 +12,6 @@ public class GameOverScreen : MonoBehaviour
 
     public void RespawnButton()
     {
-        SceneManager.LoadScene("Aiden");
+        SceneManager.LoadScene("Main_V2");
     }
 }
