@@ -11,6 +11,7 @@ public class HitPoints : MonoBehaviour, IDamageable {
     private int currentHitPoints;
     private bool vulnerable = true;
     public GameObject particleDeath;
+    public GameOverScreen gameOverScreen;
 
     // Start is called before the first frame update
     protected void Start() {
@@ -47,6 +48,16 @@ public class HitPoints : MonoBehaviour, IDamageable {
         //AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
         //Instantiate(explosionPrefab, transform.position, transform.rotation);
         Instantiate(particleDeath, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if(gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+            gameOverScreen.Setup();
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
